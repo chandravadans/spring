@@ -16,7 +16,7 @@ public class HomeController {
 	@Autowired
 	MovieUtil movieUtil;
 	
-	@RequestMapping(value = "/", method = RequestMethod.GET )
+	@RequestMapping(value = "/movies", method = RequestMethod.GET )
 	public List<Movie> home(){
 		return movieUtil.sortMovies();
 	}
